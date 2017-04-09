@@ -13,9 +13,13 @@
 		82185CB31E98067A00FBA637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82185CB21E98067A00FBA637 /* Assets.xcassets */; };
 		82185CB61E98067A00FBA637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82185CB41E98067A00FBA637 /* LaunchScreen.storyboard */; };
 		82185CBF1E9892AF00FBA637 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82185CBE1E9892AF00FBA637 /* Extensions.swift */; };
+		82E387811E9A9369003DE0CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82E387801E9A9369003DE0CE /* GoogleService-Info.plist */; };
+		8C0B926471272750EE5C0673 /* Pods_InstaBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15FF653B161FCC0DA6FB197A /* Pods_InstaBase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15FF653B161FCC0DA6FB197A /* Pods_InstaBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B42840CDD6798E75000A90 /* Pods-InstaBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaBase/Pods-InstaBase.release.xcconfig"; sourceTree = "<group>"; };
 		82185CA81E98067A00FBA637 /* InstaBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82185CAB1E98067A00FBA637 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82185CAD1E98067A00FBA637 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		82185CB51E98067A00FBA637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82185CB71E98067A00FBA637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82185CBE1E9892AF00FBA637 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		82E387801E9A9369003DE0CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B82187D6CCE4611E099208DC /* Pods-InstaBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaBase/Pods-InstaBase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C0B926471272750EE5C0673 /* Pods_InstaBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E71CBF222C2365ED09CEEF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B82187D6CCE4611E099208DC /* Pods-InstaBase.debug.xcconfig */,
+				18B42840CDD6798E75000A90 /* Pods-InstaBase.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		62C3163BD47DAAFF3FA2E514 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15FF653B161FCC0DA6FB197A /* Pods_InstaBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		82185C9F1E98067A00FBA637 = {
 			isa = PBXGroup;
 			children = (
 				82185CAA1E98067A00FBA637 /* InstaBase */,
 				82185CA91E98067A00FBA637 /* Products */,
+				1E71CBF222C2365ED09CEEF7 /* Pods */,
+				62C3163BD47DAAFF3FA2E514 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				82185CB21E98067A00FBA637 /* Assets.xcassets */,
 				82185CB41E98067A00FBA637 /* LaunchScreen.storyboard */,
 				82185CB71E98067A00FBA637 /* Info.plist */,
+				82E387801E9A9369003DE0CE /* GoogleService-Info.plist */,
 			);
 			path = InstaBase;
 			sourceTree = "<group>";
@@ -82,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82185CBA1E98067A00FBA637 /* Build configuration list for PBXNativeTarget "InstaBase" */;
 			buildPhases = (
+				16997AD71B324EA2245F92D0 /* [CP] Check Pods Manifest.lock */,
 				82185CA41E98067A00FBA637 /* Sources */,
 				82185CA51E98067A00FBA637 /* Frameworks */,
 				82185CA61E98067A00FBA637 /* Resources */,
+				15B6B6434DFB2DD7911E00CC /* [CP] Embed Pods Frameworks */,
+				A6899241DD87C07BF4A66DE9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -109,6 +139,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = UP5S927B5L;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -138,10 +173,59 @@
 				82185CB61E98067A00FBA637 /* LaunchScreen.storyboard in Resources */,
 				82185CB31E98067A00FBA637 /* Assets.xcassets in Resources */,
 				82185CB11E98067A00FBA637 /* Main.storyboard in Resources */,
+				82E387811E9A9369003DE0CE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15B6B6434DFB2DD7911E00CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaBase/Pods-InstaBase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16997AD71B324EA2245F92D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A6899241DD87C07BF4A66DE9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaBase/Pods-InstaBase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		82185CA41E98067A00FBA637 /* Sources */ = {
@@ -269,12 +353,13 @@
 		};
 		82185CBB1E98067A00FBA637 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B82187D6CCE4611E099208DC /* Pods-InstaBase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UP5S927B5L;
 				INFOPLIST_FILE = InstaBase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MichaelD.InstaBase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelD.InstaBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -282,12 +367,13 @@
 		};
 		82185CBC1E98067A00FBA637 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18B42840CDD6798E75000A90 /* Pods-InstaBase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UP5S927B5L;
 				INFOPLIST_FILE = InstaBase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MichaelD.InstaBase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelD.InstaBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -312,6 +398,7 @@
 				82185CBC1E98067A00FBA637 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
