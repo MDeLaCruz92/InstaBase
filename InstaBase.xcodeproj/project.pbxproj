@@ -13,6 +13,9 @@
 		82185CB31E98067A00FBA637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82185CB21E98067A00FBA637 /* Assets.xcassets */; };
 		82185CB61E98067A00FBA637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82185CB41E98067A00FBA637 /* LaunchScreen.storyboard */; };
 		82185CBF1E9892AF00FBA637 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82185CBE1E9892AF00FBA637 /* Extensions.swift */; };
+		824DFEF91E9DC76600DA65A8 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DFEF81E9DC76600DA65A8 /* MainTabBarController.swift */; };
+		824DFEFE1E9DC8C600DA65A8 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DFEFD1E9DC8C600DA65A8 /* UserProfileController.swift */; };
+		824DFF021E9F110600DA65A8 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DFF011E9F110600DA65A8 /* UserProfileHeader.swift */; };
 		82E387811E9A9369003DE0CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82E387801E9A9369003DE0CE /* GoogleService-Info.plist */; };
 		8C0B926471272750EE5C0673 /* Pods_InstaBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15FF653B161FCC0DA6FB197A /* Pods_InstaBase.framework */; };
 /* End PBXBuildFile section */
@@ -28,6 +31,9 @@
 		82185CB51E98067A00FBA637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82185CB71E98067A00FBA637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82185CBE1E9892AF00FBA637 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		824DFEF81E9DC76600DA65A8 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		824DFEFD1E9DC8C600DA65A8 /* UserProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
+		824DFF011E9F110600DA65A8 /* UserProfileHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
 		82E387801E9A9369003DE0CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B82187D6CCE4611E099208DC /* Pods-InstaBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaBase/Pods-InstaBase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,9 +88,12 @@
 		82185CAA1E98067A00FBA637 /* InstaBase */ = {
 			isa = PBXGroup;
 			children = (
+				824DFEFF1E9F10E700DA65A8 /* UserProfile */,
+				824DFEFC1E9DC7BD00DA65A8 /* Model */,
+				824DFEFB1E9DC7B800DA65A8 /* View */,
+				824DFEFA1E9DC7B400DA65A8 /* Controller */,
 				82185CBD1E98929C00FBA637 /* Utils */,
 				82185CAB1E98067A00FBA637 /* AppDelegate.swift */,
-				82185CAD1E98067A00FBA637 /* ViewController.swift */,
 				82185CAF1E98067A00FBA637 /* Main.storyboard */,
 				82185CB21E98067A00FBA637 /* Assets.xcassets */,
 				82185CB41E98067A00FBA637 /* LaunchScreen.storyboard */,
@@ -100,6 +109,38 @@
 				82185CBE1E9892AF00FBA637 /* Extensions.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		824DFEFA1E9DC7B400DA65A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				824DFEF81E9DC76600DA65A8 /* MainTabBarController.swift */,
+				82185CAD1E98067A00FBA637 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		824DFEFB1E9DC7B800DA65A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		824DFEFC1E9DC7BD00DA65A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		824DFEFF1E9F10E700DA65A8 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				824DFF011E9F110600DA65A8 /* UserProfileHeader.swift */,
+				824DFEFD1E9DC8C600DA65A8 /* UserProfileController.swift */,
+			);
+			name = UserProfile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +275,9 @@
 			files = (
 				82185CAE1E98067A00FBA637 /* ViewController.swift in Sources */,
 				82185CBF1E9892AF00FBA637 /* Extensions.swift in Sources */,
+				824DFEF91E9DC76600DA65A8 /* MainTabBarController.swift in Sources */,
+				824DFF021E9F110600DA65A8 /* UserProfileHeader.swift in Sources */,
+				824DFEFE1E9DC8C600DA65A8 /* UserProfileController.swift in Sources */,
 				82185CAC1E98067A00FBA637 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
